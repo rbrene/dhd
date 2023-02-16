@@ -16,7 +16,7 @@ export const Menu: React.FC = () => {
             to: {
                 rotateZ: status ? 45 : 0,
                 y: status ? 11 : 0,
-                backgroundColor: status || (themeContext.status === 'dark') ? '#F2F2F2' : '#042940'
+                backgroundColor: status || (themeContext.status === 'dark') ? '#cbd8ff' : '#2E3959'
             },
             delay: status && (device === 'mobile' || 'tablet') ? 0 : 750,
             config: {
@@ -29,7 +29,7 @@ export const Menu: React.FC = () => {
             id: 1,
             to: {
                 scaleX: status ? 0 : 0.75,
-                backgroundColor: status || (themeContext.status === 'dark') ? '#F2F2F2' : '#042940'
+                backgroundColor: status || (themeContext.status === 'dark') ? '#cbd8ff' : '#2E3959'
             },
             delay: status && (device === 'mobile' || 'tablet') ? 0 : 750,
             config: {
@@ -43,7 +43,7 @@ export const Menu: React.FC = () => {
             to: {
                 rotateZ: status ? -45 : 0,
                 y: status ? -11 : 0,
-                backgroundColor: status || (themeContext.status === 'dark') ? '#F2F2F2' : '#042940'
+                backgroundColor: status || (themeContext.status === 'dark') ? '#cbd8ff' : '#2E3959'
             },
             delay: status && (device === 'mobile' || 'tablet') ? 0 : 750,
             config: {

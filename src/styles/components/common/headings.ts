@@ -18,7 +18,6 @@ export const Title = styled(animated.p)`
     z-index: inherit;
 
     @media ${media.mobile.min} {
-        font-size: ${rem(12)};
         text-align: left;
     }
 

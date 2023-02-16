@@ -89,10 +89,10 @@ export const ContactInfo = () => {
                     $justifyContent='center'
                     $gap={device === 'mobile' ? 8 : 4}
                 >
-                    <Element.Email style={device === 'mobile' ? mobileEmailSpring : emailSpring}>
+                    <Element.Email style={device !== 'desktop' ? mobileEmailSpring : emailSpring}>
                         <Link.Email email={email} />
                     </Element.Email>
-                    <Element.PhoneNumber style={device === 'mobile' ? mobileTelSpring : telSpring}>
+                    <Element.PhoneNumber style={device !== 'desktop' ? mobileTelSpring : telSpring}>
                         <Link.Tel tel={phone} />
                     </Element.PhoneNumber>
                 </Layout.FlexAlign>
