@@ -39,8 +39,8 @@ const Secondary: React.FC<SecondaryButtonProps> = ({ type, onClick, children }) 
     const spring = useSpring({
         to: {
             scale: hover ? 0.98 : 1,
-            borderColor: theme.accent.main,
-            color: status === 'dark' ? theme.accent.main : theme.accent.minor
+            borderColor: status === 'dark' ? theme.accent.main : theme.mainAccentSecondary,
+            color: status === 'dark' ? theme.accent.main : theme.accent.primary
         }
     });
 
