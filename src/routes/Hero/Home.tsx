@@ -1,15 +1,15 @@
 import React from 'react';
 import { Section } from '../../components/common/Section';
 import Article from '../../styles/layouts/articles';
+import Heading from '../../components/common/Heading';
+import Text from '../../components/common/Text';
+import { Button } from '../../components/common/Button';
+import { ConsultationForm } from '../../components/context/ConsultationForm';
 import * as Wrapper from '../../styles/layouts/containers';
 import * as FlexLayout from '../../styles/layouts/flex';
 import * as Utility from '../../styles/utilities/padding';
-import { Data } from '../../data';
 import { useDeviceQuery } from '../../hooks/useDeviceQuery';
-import { Button } from '../../components/common/Button';
-import { ConsultationForm } from '../../components/context/ConsultationForm';
-import Heading from '../../components/common/Heading';
-import Text from '../../components/common/Text';
+import { Data } from '../../data';
 
 
 const Home = () => {

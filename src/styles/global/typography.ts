@@ -46,7 +46,7 @@ export const P = styled(animated.p)`
     font-size: ${rem(12)};
     font-family: inherit;
     font-variation-settings: 'wght' 300;
-    line-height: 1.4;
+    line-height: 1.6;
     z-index: inherit;
 
     @media ${media.mobile.min} {

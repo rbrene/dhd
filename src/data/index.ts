@@ -43,6 +43,11 @@ export const Data = {
             primary: 'Get a Free Consultation',
             secondary: 'Become inspired'
         }
+    },
+    about: {
+        title: 'Our Story',
+        main: 'Who We Are',
+        overview: 'We are Dream Homes Development, a small family-owned business in the home development industry. We are committed to creating beautiful, functional, and comfortable homes that reflect our client’ unique needs and preferences. We understand that building a new home can be a significant investment, both financially and emotionally, and we strive to make to process as smooth and stress-free as possible.'
     }
 };
 

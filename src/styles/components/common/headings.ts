@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { animated } from '@react-spring/web';
-import { H1 } from '../../global/typography';
+import { H1, H2 } from '../../global/typography';
 import { em, rem } from '../../../helpers/units';
 import { media } from '../../../helpers/mediaQueries';
 
@@ -27,14 +27,12 @@ export const Title = styled(animated.p)`
 `;
 
 export const MainHeading = styled(H1)`
-    position: relative;
     max-width: 22ch;
     font-size: ${rem(24)};
     font-family: var-montserrat;
     font-variation-settings: 'wght' 800;
     text-align: center;
     line-height: ${em(18)};
-    z-index: inherit;
 
     @media ${media.mobile.min} {
         text-align: left;
@@ -47,4 +45,23 @@ export const MainHeading = styled(H1)`
     @media ${media.desktop.min} {
         font-size: ${rem(48)};
     } 
+`;
+
+export const SectionHeading = styled(H2)`
+    font-size: ${rem(24)};
+    font-family: var-montserrat;
+    font-variation-settings: 'wght' 800;
+    text-align: center;
+
+    @media ${media.mobile.min} {
+        text-align: left;
+    }
+
+    @media ${media.tablet.min} {
+        font-size: ${rem(32)};
+    }
+
+    @media ${media.desktop.min} {
+        font-size: ${rem(48)};
+    }
 `;

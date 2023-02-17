@@ -1,4 +1,4 @@
-type TextVariantType = 'intro' | 'default' | undefined;
+type TextVariantType = 'intro' | 'overview' | 'default' | undefined;
 
 export interface PPropTypes {
     text: string;

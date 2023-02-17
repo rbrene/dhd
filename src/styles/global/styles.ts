@@ -8,6 +8,7 @@ html {
     width: 100vw;
     height: 100vh;
     font-size: 100%;
+    color-scheme: dark light;
     box-sizing: border-box;
     z-index: 0;
 }
@@ -22,7 +23,7 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     &::-webkit-scrollbar {
-        width: ${rem(14)};
+        width: ${rem(0)};
     }
     &::-webkit-scrollbar-track {
         background-color: rgba(223, 223, 223, 0);
@@ -47,6 +48,7 @@ body,
     color: inherit;
     z-index: inherit;
     user-select: none;
+    /* overflow-x: hidden; */
 }
 `;
 

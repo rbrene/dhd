@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { H1PropTypes, HeadingPropTypes, TitlePropTypes } from '../../../types/components/headings';
+import { H1PropTypes, H2PropTypes, HeadingPropTypes, TitlePropTypes } from '../../../types/components/headings';
 import * as Element from '../../../styles/components/common/headings';
 import { ThemeContext } from '../../../helpers/context';
 import { useSpring } from '@react-spring/web';
@@ -38,11 +38,29 @@ const Main: React.FC<H1PropTypes> = ({ text }) => {
     )
 };
 
+const Section: React.FC<H2PropTypes> = ({ text }) => {
+    const { theme } = useContext(ThemeContext)!;
+
+    const spring = useSpring({
+        to: {
+            color: theme.mainAccentSecondary
+        }
+    });
+
+    return (
+        <Element.MainHeading style={spring}>
+            {text}
+        </Element.MainHeading>
+    )
+};
+
 const Heading: React.FC<HeadingPropTypes> = ({ size, text }) => {
 
     switch (size) {
         case 1:
             return <Main text={text} />
+        case 2:
+            return <Section text={text} />
         case 'title':
             return <Title text={text} />
         default:

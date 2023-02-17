@@ -38,10 +38,28 @@ const Intro: React.FC<PPropTypes> = ({ text }) => {
     )
 };
 
+const Overview: React.FC<PPropTypes> = ({ text }) => {
+    const { status, theme } = useContext(ThemeContext)!;
+
+    const spring = useSpring({
+        to: {
+            color: status === 'dark' ? '#cbd8ff' : theme.mainAccentSecondary
+        }
+    });
+
+    return (
+        <PElement.Overview style={spring}>
+            {text}
+        </PElement.Overview>
+    )
+};
+
 const Text: React.FC<TextPropTypes> = ({ variant, text }) => {
     switch (variant) {
         case 'intro':
             return <Intro text={text} />
+        case 'overview':
+            return <Overview text={text} />
         case 'default':
             return <Default text={text} />
         default:

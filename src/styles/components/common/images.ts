@@ -25,7 +25,7 @@ export const MaskedImage = styled(animated.img)`
 `;
 
 export const MaskedImageOverlay = styled(animated.div)`
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
