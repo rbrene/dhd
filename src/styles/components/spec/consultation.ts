@@ -21,7 +21,7 @@ export const Form = styled(Element.Form)`
     @media ${media.desktop.min} {
         max-width: ${rem(480)};
         p {
-            font-size: ${rem(12)};
+            font-size: ${rem(14)};
         }
     }
 `;
@@ -29,8 +29,8 @@ export const Form = styled(Element.Form)`
 export const Field = styled(Element.Field)`
     border: none;
 
-    button[type='submit'] {
-        margin-top: ${rem(16)};
+    &:last-child {
+        margin-top: ${rem(8)};
     }
 `;
 
@@ -43,7 +43,7 @@ export const Legend = styled(Element.Legend)`
     letter-spacing: 0.05ch;
 
     @media ${media.desktop.min} {
-        font-size: ${rem(16)};
+        font-size: ${rem(18)};
     }
 `;
 
@@ -55,6 +55,10 @@ export const Label = styled(Element.Label)`
     text-transform: uppercase;
     opacity: 0.35;
     z-index: inherit;
+
+    @media ${media.desktop.min} {
+        font-size: ${rem(12)};
+    }
 `;
 
 export const Input = styled(Element.Input)`
@@ -67,7 +71,6 @@ export const Input = styled(Element.Input)`
     border: none;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-radius: ${em(3)};
     background: none;
     z-index: inherit;
 
@@ -84,6 +87,10 @@ export const Input = styled(Element.Input)`
 
     @media ${media.tablet.min} {
         font-size: ${rem(12)};
+    }
+
+    @media ${media.desktop.min} {
+        font-size: ${rem(16)};
     }
 
 `;
@@ -110,5 +117,9 @@ export const Comments = styled(Element.Textarea)`
         font-variation-settings: 'wght' 300;
         color: #2E3959;
         opacity: 0.75;
+    }
+
+    @media ${media.desktop.min} {
+        font-size: ${rem(16)};
     }
 `;

@@ -9,9 +9,11 @@ import { MdClose } from 'react-icons/md';
 import { P } from '../../../styles/global/typography';
 import { Button } from '../../common/Button';
 import { useTransition, useSpring } from '@react-spring/web';
+import { useDeviceQuery } from '../../../hooks/useDeviceQuery';
 
 
 export const Consultation = () => {
+    const device = useDeviceQuery();
     const { status, toggle } = useContext(ConsultationFormFunction)!;
     const themeContext = useContext(ThemeContext)!;
 
@@ -63,7 +65,7 @@ export const Consultation = () => {
         return () => {
             document.removeEventListener('keydown', handleKeyDown);
         }
-    }, [toggle])
+    }, [toggle]);
 
 
     return (
@@ -81,7 +83,10 @@ export const Consultation = () => {
                                         onSubmit={submit}
                                         style={{ ...item, ...formBackground }}
                                     >
-                                        <Utility.PaddingCustom>
+                                        <Utility.PaddingCustom
+                                            $block={16}
+                                            $inline={16}
+                                        >
                                             <Element.Legend children='Request a Consultation' style={color} />
                                             <P style={color}>
                                                 Ready to get started? Fill out the form below to schedule a free consultation with one of our expert home builders. We'll work with you to understand your needs, discuss your options, and help bring your vision to life.

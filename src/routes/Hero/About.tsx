@@ -4,12 +4,14 @@ import Article from '../../styles/layouts/articles';
 import * as FlexLayout from '../../styles/layouts/flex';
 import * as GridLayout from '../../styles/layouts/grids';
 import * as Utility from '../../styles/utilities/padding';
+import * as Wrapper from '../../styles/layouts/containers';
 import Container from '../../styles/layouts/containers';
 import Heading from '../../components/common/Heading';
 import Text from '../../components/common/Text';
 import { useDeviceQuery } from '../../hooks/useDeviceQuery';
 import { Data } from '../../data';
 import { QouteForm } from '../../components/spec/QouteForm';
+import { Button } from '../../components/common/Button';
 
 
 const About = () => {
@@ -31,6 +33,9 @@ const About = () => {
                             <Heading size='title' text={title} />
                             <Heading size={2} text={main} />
                             <Text variant='overview' text={overview} />
+                            <Wrapper.CallToAction>
+                                <Button variant='secondary' children='Learn More' />
+                            </Wrapper.CallToAction>
                         </FlexLayout.FlexAlign>
                     </Utility.Padding>
                 </Article>
