@@ -28,6 +28,10 @@ export const Form = styled(Element.Form)`
 
 export const Field = styled(Element.Field)`
     border: none;
+
+    button[type='submit'] {
+        margin-top: ${rem(16)};
+    }
 `;
 
 export const Legend = styled(Element.Legend)`

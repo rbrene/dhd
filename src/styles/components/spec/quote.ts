@@ -30,6 +30,10 @@ export const QouteForm = styled(Element.Form)`
 
 export const QouteField = styled(Element.Field)`
     border: none;
+
+    button[type='submit'] {
+        margin-top: ${rem(16)};
+    }
 `;
 
 export const QouteFormLegend = styled(Element.Legend)`
