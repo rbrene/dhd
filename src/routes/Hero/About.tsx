@@ -9,7 +9,6 @@ import Heading from '../../components/common/Heading';
 import Text from '../../components/common/Text';
 import { useDeviceQuery } from '../../hooks/useDeviceQuery';
 import { Data } from '../../data';
-import * as FormElement from '../../styles/global/forms';
 import { QouteForm } from '../../components/spec/QouteForm';
 
 
